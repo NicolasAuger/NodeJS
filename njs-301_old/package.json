@@ -1,0 +1,14 @@
+{
+  "name": "njs-101-livre-d-or",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Jeremy Trufier <jeremy@trufier.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sqlite": "^2.2.0"
+  }
+}

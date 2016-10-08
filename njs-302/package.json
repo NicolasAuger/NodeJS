@@ -1,0 +1,21 @@
+{
+  "name": "njs-302",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "mycommand": "./index.js",
+    "fille": "./inquirer.js",
+    "louka": "./louka.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "inquirer": "^1.2.1"
+  }
+}
