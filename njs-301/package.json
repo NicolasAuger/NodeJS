@@ -1,17 +1,14 @@
 {
-  "name": "njs-301",
+  "name": "njs-101-livre-d-or",
   "version": "1.0.0",
   "description": "",
-  "main": "jeu.js",
-  "dependencies": {
-    "blessed": "^0.1.81",
-    "blessed-contrib": "^3.5.5",
-    "lodash": "^4.16.3"
-  },
-  "devDependencies": {},
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Jeremy Trufier <jeremy@trufier.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sqlite": "^2.2.0"
+  }
 }
