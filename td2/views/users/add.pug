@@ -1,0 +1,26 @@
+extends ../layout
+
+block content
+        h1 Bonjour
+        p= text
+        p= content
+        br
+
+        form(method='POST' action='/users')
+          div
+            label(for='pseudo') Pseudo:
+            input#name.form-control(type='text', placeholder='your pseudo' name='pseudo')
+          br
+          div
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='name@email.com' name='email')
+          div
+            br
+            label(for='firstname') Prénom:
+            input#pw.form-control(type='text' name='firstname')
+          div
+            br
+            label(for='lastname') Nom:
+            input#pw2.form-control(type='text' name='lastname')
+          br
+          button.btn.btn-primary(type='submit') Envoyer

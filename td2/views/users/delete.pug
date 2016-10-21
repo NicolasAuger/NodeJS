@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+  h1 Bonjour
+  br
+  p= text
+  br
+  form(method='POST' action='/users'+special)
+    button.btn.btn-primary(type='submit') Oui, supprimer
+  form(method='GET' action='/users')
+    button.btn.btn-primary(type='submit') Non surtout pas :o !

@@ -1,0 +1,35 @@
+extends ../layout
+
+block content
+        h1 Modification de profil
+        br
+        ul
+          each val in users
+            li= 'ID : ' + val.rowid
+            li= 'Pseudo : ' + val.pseudo
+            li= 'Email : ' +val.email
+            li= 'Prénom : ' +val.firstname
+            li= 'Nom : ' +val.lastname
+            li= 'Date de création : ' +val.createdAt
+            li= 'Date de modification : ' +val.updatedAt
+            br
+        p= text
+        form(method='POST' action='/users'+special)
+          each val in users
+            div
+              label(for='pseudo') Pseudo:
+              input#name.form-control(type='text', placeholder='your pseudo' name='pseudo'  value=''+val.pseudo)
+            br
+            div
+              label(for='email') Email:
+              input#email.form-control(type='email', placeholder='name@email.com' name='email' value=''+val.email)
+            div
+              br
+              label(for='firstname') Prénom:
+              input#pw.form-control(type='text' name='firstname' value=val.firstname)
+            div
+              br
+              label(for='lastname') Nom:
+              input#pw2.form-control(type='text' name='lastname' value=val.lastname)
+            br
+            button.btn.btn-primary(type='submit') Modifier

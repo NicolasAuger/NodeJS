@@ -1,0 +1,17 @@
+extends ../layout
+block content
+
+        h1 Bonjour
+        br
+        p= text
+        br
+        ul
+          each val in users
+            li= 'ID : ' + val.rowid
+            li= 'Pseudo : ' + val.pseudo
+            li= 'Email : ' +val.email
+            li= 'Prénom : ' +val.firstname
+            li= 'Nom : ' +val.lastname
+            li= 'Date de création : ' +val.createdAt
+            li= 'Date de modification : ' +val.updatedAt
+            br
